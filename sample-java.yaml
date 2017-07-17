@@ -10,10 +10,11 @@ spec:
         app: samplejava
     spec:
       containers:
-      - name: order
+      - name: samplejava
         image: devopsdemoregistry.azurecr.io/javademo:latest
         ports:
         - containerPort: 8080
+        imagePullPolicy: Always
 ---
 apiVersion: v1
 kind: Service
